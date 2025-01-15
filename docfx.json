@@ -1,0 +1,46 @@
+{
+  "$schema": "https://raw.githubusercontent.com/dotnet/docfx/main/schemas/docfx.schema.json",
+  "metadata": [
+    {
+      "src": [
+        {
+            "src": "../ASE Assignment/ASE Assignment",
+            "files": [
+                "**/*.csproj"
+            ]
+        }
+      ],
+      "dest": "api"
+    }
+  ],
+  "build": {
+    "content": [
+      {
+        "files": [
+          "**/*.{md,yml}"
+        ],
+        "exclude": [
+          "_site/**"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "images/**"
+        ]
+      }
+    ],
+    "output": "_site",
+    "template": [
+      "default",
+      "modern"
+    ],
+    "globalMetadata": {
+      "_appName": "ASE_Assignment_Aayusha_Maharjan_77356768",
+      "_appTitle": "ASE_Assignment_Aayusha_Maharjan_77356768",
+      "_enableSearch": true,
+      "pdf": false
+    }
+  }
+}
